@@ -24,7 +24,7 @@ namespace Kaxaml.Views
     public partial class DocumentsView : System.Windows.Controls.UserControl
     {
 
-		#region Constructors 
+		#region Constructors?
 
         public DocumentsView()
         {
@@ -32,7 +32,7 @@ namespace Kaxaml.Views
             KaxamlInfo.ParseRequested += new KaxamlInfo.ParseRequestedDelegate(KaxamlInfo_ParseRequested);
         }
 
-		#endregion Constructors 
+		#endregion Constructors?
 
 
         #region XamlDocuments (DependencyProperty)

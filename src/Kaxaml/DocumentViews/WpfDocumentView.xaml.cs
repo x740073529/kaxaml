@@ -23,7 +23,7 @@ namespace Kaxaml.DocumentViews
     public partial class WPFDocumentView : System.Windows.Controls.UserControl, IXamlDocumentView
     {
 
-        #region Static Fields
+        #region Static Fields
 
         //-------------------------------------------------------------------
         //
@@ -32,16 +32,16 @@ namespace Kaxaml.DocumentViews
         //-------------------------------------------------------------------
         private static DispatcherTimer dispatcherTimer;
 
-        #endregion Static Fields
+        #endregion Static Fields
 
-        #region Fields
+        #region Fields
 
 
         private bool UnhandledExceptionRaised;
 
-        #endregion Fields
+        #endregion Fields
 
-        #region Constructors
+        #region Constructors
 
         public WPFDocumentView()
         {
@@ -56,9 +56,9 @@ namespace Kaxaml.DocumentViews
             XmlCompletionDataProvider.LoadSchema(schemafile);
         }
 
-        #endregion Constructors
+        #endregion Constructors
 
-        #region Event Handlers
+        #region Event Handlers
 
         void ContentArea_ContentRendered(object sender, EventArgs e)
         {
@@ -85,7 +85,7 @@ namespace Kaxaml.DocumentViews
             }
         }
 
-        #endregion Event Handlers
+        #endregion Event Handlers
         //-------------------------------------------------------------------
         //
         //  Properties

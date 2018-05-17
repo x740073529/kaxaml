@@ -27,7 +27,7 @@ namespace Kaxaml.CodeCompletion
     public partial class StringBox : System.Windows.Controls.UserControl
     {
 
-		#region Constructors 
+		#region Constructors?
 
         public StringBox()
         {
@@ -47,7 +47,7 @@ namespace Kaxaml.CodeCompletion
             StringHostItems.Add(new StringHost("")); //10
         }
 
-		#endregion Constructors 
+		#endregion Constructors?
 
 
         #region Private Fields
@@ -518,7 +518,7 @@ namespace Kaxaml.CodeCompletion
     public class StringHost : INotifyPropertyChanged
     {
 
-		#region Fields 
+		#region Fields?
 
 
         private string _Value;
@@ -527,18 +527,18 @@ namespace Kaxaml.CodeCompletion
         internal bool _IsSelectable = true;
         private bool _IsSelected = false;
 
-		#endregion Fields 
+		#endregion Fields?
 
-		#region Constructors 
+		#region Constructors?
 
         public StringHost(string value)
         {
             Value = value;
         }
 
-		#endregion Constructors 
+		#endregion Constructors?
 
-		#region Properties 
+		#region Properties?
 
 
         public string Value
@@ -582,16 +582,16 @@ namespace Kaxaml.CodeCompletion
         }
 
 
-		#endregion Properties 
+		#endregion Properties?
 
-		#region Overridden Methods 
+		#region Overridden Methods
 
         public override string ToString()
         {
             return Value;
         }
 
-		#endregion Overridden Methods 
+		#endregion Overridden Methods
 
 
         #region INotifyPropertyChanged
@@ -612,14 +612,14 @@ namespace Kaxaml.CodeCompletion
     public class ContentItemsControl : ItemsControl
     {
 
-		#region Overridden Methods 
+		#region Overridden Methods
 
         protected override DependencyObject GetContainerForItemOverride()
         {
             return new ContentControl();
         }
 
-		#endregion Overridden Methods 
+		#endregion Overridden Methods
 
     }
 

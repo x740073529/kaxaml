@@ -22,16 +22,16 @@ namespace Kaxaml.Plugins
     public partial class Settings : System.Windows.Controls.UserControl
     {
 
-		#region Constructors 
+		#region Constructors?
 
         public Settings()
         {
             InitializeComponent();
         }
 
-		#endregion Constructors 
+		#endregion Constructors?
 
-		#region Private Methods 
+		#region Private Methods
 
         private void EditAgDefaultXaml(object sender, RoutedEventArgs e)
         {
@@ -43,7 +43,7 @@ namespace Kaxaml.Plugins
             Kaxaml.Properties.Settings.Default.WPFDefaultXaml = XamlEditorDialog.ShowModal(Kaxaml.Properties.Settings.Default.WPFDefaultXaml, "Default WPF Xaml", Application.Current.MainWindow);
         }
 
-		#endregion Private Methods 
+		#endregion Private Methods
 
     }
 }

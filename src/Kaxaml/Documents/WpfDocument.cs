@@ -9,7 +9,7 @@ namespace Kaxaml.Documents
     class WpfDocument : XamlDocument
     {
 
-		#region Constructors 
+		#region Constructors?
 
         public WpfDocument(string folder, string sourceText)
             : base(folder)
@@ -24,7 +24,7 @@ namespace Kaxaml.Documents
             InitializeSourceText(Settings.Default.WPFDefaultXaml);
 		}
 
-		#endregion Constructors 
+		#endregion Constructors?
 
     }
 }

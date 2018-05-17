@@ -9,7 +9,7 @@ namespace Kaxaml.Controls
 {
     public static class RenderHelper
     {
-        #region Static Methods
+        #region Static Methods
 
         public static BitmapSource ElementToBitmap(FrameworkElement e)
         {
@@ -159,6 +159,6 @@ namespace Kaxaml.Controls
             return Filename;
         }
 
-        #endregion Static Methods
+        #endregion Static Methods
     }
 }

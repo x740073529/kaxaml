@@ -17,7 +17,7 @@ namespace Kaxaml.Plugins.Default
     public partial class SnapshotPlugin : System.Windows.Controls.UserControl
     {
 
-		#region Constructors 
+		#region Constructors?
 
         public SnapshotPlugin()
         {
@@ -25,18 +25,18 @@ namespace Kaxaml.Plugins.Default
             KaxamlInfo.ContentLoaded += new KaxamlInfo.ContentLoadedDelegate(KaxamlInfo_ContentLoaded);
         }
 
-		#endregion Constructors 
+		#endregion Constructors?
 
-		#region Event Handlers 
+		#region Event Handlers?
 
         void KaxamlInfo_ContentLoaded()
         {
             RenderImage.Source = RenderContent();
         }
 
-		#endregion Event Handlers 
+		#endregion Event Handlers?
 
-		#region Private Methods 
+		#region Private Methods
 
         private void Copy(object sender, RoutedEventArgs e)
         {
@@ -93,7 +93,7 @@ namespace Kaxaml.Plugins.Default
             }
         }
 
-		#endregion Private Methods 
+		#endregion Private Methods
 
     }
 }
