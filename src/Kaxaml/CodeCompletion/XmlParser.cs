@@ -19,7 +19,7 @@ namespace Kaxaml.CodeCompletion
     /// </remarks>
     public static class XmlParser
     {
-        #region Static Methods
+        #region Static Methods
 
         /// <summary>
         /// Locates the index of the end tag character.
@@ -761,9 +761,9 @@ namespace Kaxaml.CodeCompletion
             return reversedString.ToString();
         }
 
-        #endregion Static Methods
+        #endregion Static Methods
 
-        #region Nested Classes
+        #region Tested Classes
 
 
         /// <summary>
@@ -773,15 +773,15 @@ namespace Kaxaml.CodeCompletion
         class NamespaceURI
         {
 
-            #region Fields
+            #region Fields
 
 
             string namespaceURI = String.Empty;
             string prefix = String.Empty;
 
-            #endregion Fields
+            #endregion Fields
 
-            #region Constructors
+            #region Constructors
 
             public NamespaceURI(string namespaceURI, string prefix)
             {
@@ -793,9 +793,9 @@ namespace Kaxaml.CodeCompletion
             {
             }
 
-            #endregion Constructors
+            #endregion Constructors
 
-            #region Properties
+            #region Properties
 
 
             public string Namespace
@@ -827,10 +827,10 @@ namespace Kaxaml.CodeCompletion
             }
 
 
-            #endregion Properties
+            #endregion Properties
 
         }
-        #endregion Nested Classes
+        #endregion Tested Classes
 
     }
 
@@ -855,22 +855,22 @@ namespace Kaxaml.CodeCompletion
     public class XmlElementPath
     {
 
-        #region Fields
+        #region Fields
 
 
         QualifiedNameCollection elements = new QualifiedNameCollection();
 
-        #endregion Fields
+        #endregion Fields
 
-        #region Constructors
+        #region Constructors
 
         public XmlElementPath()
         {
         }
 
-        #endregion Constructors
+        #endregion Constructors
 
-        #region Properties
+        #region Properties
 
 
         /// <summary>
@@ -886,9 +886,9 @@ namespace Kaxaml.CodeCompletion
         }
 
 
-        #endregion Properties
+        #endregion Properties
 
-        #region Overridden Methods
+        #region Overridden Methods
 
         /// <summary>
         /// An xml element path is considered to be equal if 
@@ -922,9 +922,9 @@ namespace Kaxaml.CodeCompletion
             return elements.GetHashCode();
         }
 
-        #endregion Overridden Methods
+        #endregion Overridden Methods
 
-        #region Private Methods
+        #region Private Methods
 
         /// <summary>
         /// Finds the first parent that does belong in the specified
@@ -962,9 +962,9 @@ namespace Kaxaml.CodeCompletion
             }
         }
 
-        #endregion Private Methods
+        #endregion Private Methods
 
-        #region Public Methods
+        #region Public Methods
 
         /// <summary>
         /// Compacts the path so it only contains the elements that are from 
@@ -989,7 +989,7 @@ namespace Kaxaml.CodeCompletion
             }
         }
 
-        #endregion Public Methods
+        #endregion Public Methods
 
     }
 
@@ -1011,16 +1011,16 @@ namespace Kaxaml.CodeCompletion
     public class QualifiedName
     {
 
-        #region Fields
+        #region Fields
 
 
         string prefix = String.Empty;
 
         XmlQualifiedName xmlQualifiedName = XmlQualifiedName.Empty;
 
-        #endregion Fields
+        #endregion Fields
 
-        #region Constructors
+        #region Constructors
 
         public QualifiedName(string name, string namespaceUri, string prefix)
         {
@@ -1037,9 +1037,9 @@ namespace Kaxaml.CodeCompletion
         {
         }
 
-        #endregion Constructors
+        #endregion Constructors
 
-        #region Properties
+        #region Properties
 
 
         /// <summary>
@@ -1088,9 +1088,9 @@ namespace Kaxaml.CodeCompletion
         }
 
 
-        #endregion Properties
+        #endregion Properties
 
-        #region Static Methods
+        #region Static Methods
 
         public static bool operator !=(QualifiedName lhs, QualifiedName rhs)
         {
@@ -1113,9 +1113,9 @@ namespace Kaxaml.CodeCompletion
             return equals;
         }
 
-        #endregion Static Methods
+        #endregion Static Methods
 
-        #region Overridden Methods
+        #region Overridden Methods
 
         /// <summary>
         /// A qualified name is considered equal if the namespace and 
@@ -1147,7 +1147,7 @@ namespace Kaxaml.CodeCompletion
             return xmlQualifiedName.GetHashCode();
         }
 
-        #endregion Overridden Methods
+        #endregion Overridden Methods
 
     }
 
@@ -1163,7 +1163,7 @@ namespace Kaxaml.CodeCompletion
     public class QualifiedNameCollection : CollectionBase
     {
 
-        #region Constructors
+        #region Constructors
 
         /// <summary>
         ///   Initializes a new instance of <see cref='QualifiedNameCollection'/> based on another <see cref='QualifiedNameCollection'/>.
@@ -1194,9 +1194,9 @@ namespace Kaxaml.CodeCompletion
         {
         }
 
-        #endregion Constructors
+        #endregion Constructors
 
-        #region Properties
+        #region Properties
 
 
         /// <summary>
@@ -1238,9 +1238,9 @@ namespace Kaxaml.CodeCompletion
         }
 
 
-        #endregion Properties
+        #endregion Properties
 
-        #region Public Methods
+        #region Public Methods
 
         /// <summary>
         ///   Adds a <see cref='QualifiedName'/> with the specified value to the 
@@ -1387,9 +1387,9 @@ namespace Kaxaml.CodeCompletion
             }
         }
 
-        #endregion Public Methods
+        #endregion Public Methods
 
-        #region Nested Classes
+        #region Tested Classes
 
 
         /// <summary>
@@ -1401,15 +1401,15 @@ namespace Kaxaml.CodeCompletion
         public class QualifiedNameEnumerator : IEnumerator
         {
 
-            #region Fields
+            #region Fields
 
 
             IEnumerable temp;
             IEnumerator baseEnumerator;
 
-            #endregion Fields
+            #endregion Fields
 
-            #region Constructors
+            #region Constructors
 
             /// <summary>
             ///   Initializes a new instance of <see cref='QualifiedNameEnumerator'/>.
@@ -1420,9 +1420,9 @@ namespace Kaxaml.CodeCompletion
                 this.baseEnumerator = temp.GetEnumerator();
             }
 
-            #endregion Constructors
+            #endregion Constructors
 
-            #region Properties
+            #region Properties
 
 
             object IEnumerator.Current
@@ -1445,9 +1445,9 @@ namespace Kaxaml.CodeCompletion
             }
 
 
-            #endregion Properties
+            #endregion Properties
 
-            #region Public Methods
+            #region Public Methods
 
             /// <summary>
             ///   Advances the enumerator to the next <see cref='QualifiedName'/> of the <see cref='QualifiedNameCollection'/>.
@@ -1465,10 +1465,10 @@ namespace Kaxaml.CodeCompletion
                 baseEnumerator.Reset();
             }
 
-            #endregion Public Methods
+            #endregion Public Methods
 
         }
-        #endregion Nested Classes
+        #endregion Tested Classes
 
     }
 
